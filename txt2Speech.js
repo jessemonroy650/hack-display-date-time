@@ -13,7 +13,7 @@ var txt2SpeechPlugin = {
         if (theText == 2) {
             TTS.speak({
                 text: 'hello, world!',
-                locale: 'en-GB',
+                locale: 'en-US',
                 rate: 0.65
             }, txt2SpeechPlugin.gotit, txt2SpeechPlugin.err);
         } else {
