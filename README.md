@@ -2,14 +2,15 @@
 
 A *Phonegap Build* simple example to display the date and time using `cli-6.0.0`, and minimal CSS & Javascript. It may use the Gooogle *Text to Speech* cloud service.
 
-```
-**This code example may be removed with notice.**
-```
-
 In addition, this example app uses `cordova-plugin-device`.
 
 * https://www.npmjs.com/package/cordova-plugin-device
+* https://www.npmjs.com/package/cordova-plugin-screen-orientation
 * https://www.npmjs.com/package/cordova-plugin-texttospeech
+
+## Reference for Date object
+
+* https://www.w3schools.com/jsref/jsref_obj_date.asp
 
 
 ## Supported Voices

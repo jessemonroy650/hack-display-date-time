@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="index.css" />
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8" src="app.js"></script>
+    <script type="text/javascript" charset="utf-8" src="datetime.js"></script>
     <script type="text/javascript" charset="utf-8" src="txt2Speech.js"></script>
 </head>
 <body class=height100percent>
@@ -20,16 +21,25 @@
         Date Time
         <button class="button button-pill button-action" id=exitApp>Exit</button>
     </div>
-    <h3>App Version v<span id=appVersion></span></h3>
     <div id=canvas>
 
-
+    <div id=epochTime></div>
+    <div id=theTime>
+        <span id=hour></span>:<span id=minute></span>:<span id=second></span>
+    </div>
+    <div id=theDOW>
+        <span id=dow></span>
+     </div>
+    <div id=theDate>
+        <span id=month></span> <span id=date></span>, <span id=year></span>
+    </div>
 
 
 
     </div>
     <div id=footer>
         <div><b>Status:</b> <span id=status>status unknown</span></div>
+        <div>Date/Time v<span id=appVersion></span></div>
         <div id=copyright>Created by Jesus Monroy, Jr. &copy; 2018</div>
     </div>
 </body>
