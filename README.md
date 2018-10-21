@@ -1,20 +1,15 @@
-# PGB Simplified Text to Speech
+# Hack Display Date Time
 
-A *Phonegap Build* simple example for `cordova-plugin-texttospeech` plugin using `cli-6.0.0`, and minimal CSS & Javascript. It uses the Gooogle *Text to Speech* cloud service.
+A *Phonegap Build* simple example to display the date and time using `cli-6.0.0`, and minimal CSS & Javascript. It may use the Gooogle *Text to Speech* cloud service.
 
 ```
 **This code example may be removed with notice.**
 ```
 
-* https://www.npmjs.com/package/cordova-plugin-texttospeech
-
 In addition, this example app uses `cordova-plugin-device`.
 
 * https://www.npmjs.com/package/cordova-plugin-device
-
-This example uses keyboard events to trap the input field.
-
-* https://www.w3schools.com/jsref/obj_keyboardevent.asp
+* https://www.npmjs.com/package/cordova-plugin-texttospeech
 
 
 ## Supported Voices
