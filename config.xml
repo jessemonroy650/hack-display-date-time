@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.bsdmasterindex.hack-display-date-time"
+        version     = "1.0.0"
+        versionCode = "10" >
+        <!-- https://build.phonegap.com/current-support -->
+        <preference name="phonegap-version" value="cli-6.0.0" />
+
+        <name>Display Date Time</name>
+        <description>Display Date Time</description>
+        <author href="http://bsdmasterindex.com" email="jessemonroy650@yahoo.com">
+        Jesse Monroy
+        </author>
+
+        <!-- Android SECTION -->
+        <platform name="android" />
+
+        <!-- PLUGINS PLUGINS -->
+        <plugin name="cordova-plugin-device" spec="~2.0.2" />
+        <plugin name="cordova-plugin-texttospeech" spec="~0.1.1" />
+
+    </widget>
