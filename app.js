@@ -8,17 +8,20 @@ var app = {
     kickTicker : function () {
         if (! app.stop) {
             setTimeout(app.updateDateTimeDisplay, 1000);
+            document.getElementById('status').innerHTML  = "kickedTicker";
         }
     },
     //
     updateDateTimeDisplay : function () {
         document.getElementById('status').innerHTML      = "fired clock";
         datetime.get();
+        document.getElementById('status').innerHTML      = "got get()";
         //document.getElementById('epochTime').innerHTML = datetime.epoch;
         //  Date
         document.getElementById('month').innerHTML     = datetime.monthString[datetime.monthStr];
         document.getElementById('date').innerHTML      = datetime.dateStr;
         document.getElementById('year').innerHTML      = datetime.yearStr;
+        document.getElementById('status').innerHTML    = "got date";
         //  Day Of the Week
         document.getElementById('dow').innerHTML       = datetime.dowString[datetime.dowStr];
         //  Time
@@ -26,6 +29,7 @@ var app = {
         document.getElementById('hour').innerHTML      = ('0' + datetime.hourStr).slice(-2);
         document.getElementById('minute').innerHTML    = ('0' + datetime.minuteStr).slice(-2);
         document.getElementById('second').innerHTML    = ('0' + datetime.secondStr).slice(-2);
+        document.getElementById('status').innerHTML    = "got time";
         app.kickTicker();
     },
     //
