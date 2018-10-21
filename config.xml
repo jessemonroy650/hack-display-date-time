@@ -19,6 +19,6 @@
         <!-- PLUGINS PLUGINS -->
         <plugin name="cordova-plugin-device" spec="~2.0.2" />
         <plugin name="cordova-plugin-texttospeech" spec="~0.1.1" />
-        <plugin name="cordova-plugin-screen-orientation" spec="~3.0.1" />
+        <plugin name="cordova-plugin-screen-orientation" spec="~2.0.1" />
 
     </widget>

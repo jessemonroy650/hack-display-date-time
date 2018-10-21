@@ -3,9 +3,9 @@ body {margin:0px;font-size:large;}
 #header {margin:0;padding:0;text-align:center;line-height:2em;border:1px solid black;}   
 #talkApp {margin:0.1em;float:left;font-size:0.9em;}
 #exitApp {margin:0.1em;float:right;font-size:0.9em;}
-#canvas {clear:both;height:80%;background-color:cyan;}
+#canvas {clear:both;height:74%;background-color:cyan;}
 #footer {}
-#copyright {font-style:italic;font-size:small;}
+#copyright {font-style:italic;font-size:small;float:right;}
 
 #epochTime {font-size:small;text-align:center;}
 #theTime {font-size:3.75em;text-align:center;}

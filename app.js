@@ -12,6 +12,7 @@ var app = {
     },
     //
     updateDateTimeDisplay : function () {
+        document.getElementById('status').innerHTML      = "fired clock";
         datetime.get();
         //document.getElementById('epochTime').innerHTML = datetime.epoch;
         //  Date
@@ -68,5 +69,6 @@ var app = {
         //document.getElementById('isCordovaApp').innerHTML = app.isCordova;
         document.getElementById('status').innerHTML       = 'is Cordova';
         window.screen.orientation.lock('landscape-primary');
+        app.updateDateTimeDisplay();
     }
 }
