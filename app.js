@@ -65,7 +65,7 @@ var app = {
         app.targetEvent = 'touchend';
         //
         app.isCordova                                     = (typeof window.cordova !== "undefined");
-        document.getElementById('isCordovaApp').innerHTML = app.isCordova;
+        //document.getElementById('isCordovaApp').innerHTML = app.isCordova;
         document.getElementById('status').innerHTML       = 'is Cordova';
         window.screen.orientation.lock('landscape-primary');
     }
