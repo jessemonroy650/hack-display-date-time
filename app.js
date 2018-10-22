@@ -11,6 +11,17 @@ var app = {
         }
     },
     //
+    sayDatetime : function () {
+        var t2sDatetime = '';
+        t2sDatetime = datetime.dowString[datetime.dowStr] + ' ' +
+                      datetime.monthString[datetime.monthStr]  + ' ' + 
+                      datetime.dateStr + "," + datetime.yearStr + " " +
+                      datetime.hourStr + ":" + datetime.minuteStr;
+        document.getElementById('status').innerHTML = t2sDatetime;
+        //
+        txt2SpeechPlugin.talk(t2sDatetime);
+    },
+    //
     updateDateTimeDisplay : function () {
         datetime.get();
         //document.getElementById('epochTime').innerHTML = datetime.epoch;
@@ -43,12 +54,14 @@ var app = {
         document.getElementById('talkApp').addEventListener(app.targetEvent,
             function () { 
                 if (app.isCordova) {
-                    txt2SpeechPlugin.talk(2);
+                    app.sayDatetime();  //txt2SpeechPlugin.talk(2);
                 } else {
                     alert("not working at this time.");
                 }
             },
             false);
+        // tell the plugin to report to the 'status' <span>
+        txt2SpeechPlugin.debug = 'status';
     },
     //
     onDOMContentLoaded : function () {
@@ -65,7 +78,6 @@ var app = {
         app.targetEvent = 'touchend';
         //
         app.isCordova                                     = (typeof window.cordova !== "undefined");
-        //document.getElementById('isCordovaApp').innerHTML = app.isCordova;
         document.getElementById('status').innerHTML       = 'is Cordova';
         window.screen.orientation.lock('landscape-primary');
     }

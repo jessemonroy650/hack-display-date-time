@@ -1,15 +1,22 @@
 var txt2SpeechPlugin = {
     version : '1.0.0',
+    debug   : '',
 
     gotit : function () {
-        document.getElementById('status').innerHTML = 'talk DONE.';
+        if (txt2SpeechPlugin.debug) {
+            document.getElementById(txt2SpeechPlugin.debug).innerHTML = 'talk DONE.';
+        }
     },
     err   : function (reason) {
-        document.getElementById('status').innerHTML = reason;
+        if (txt2SpeechPlugin.debug) {
+            document.getElementById(txt2SpeechPlugin.debug).innerHTML = reason;
+        }
     },
     talk  : function (theText) {
         //
-        document.getElementById('status').innerHTML = 'talk => called';
+        if (txt2SpeechPlugin.debug) {
+            document.getElementById(txt2SpeechPlugin.debug).innerHTML = 'talk => called';
+        }
         if (theText == 2) {
             TTS.speak({
                 text: 'hello, world!',
@@ -23,6 +30,5 @@ var txt2SpeechPlugin = {
                 rate: 0.50
             }, txt2SpeechPlugin.gotit, txt2SpeechPlugin.err);
         }
-        document.getElementById('status').innerHTML = 'talk => <b>waiting</b>';
     }
 }
