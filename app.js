@@ -59,7 +59,7 @@ var app = {
             app.sayDatetime,
             false);
         // tell the plugin to report to the 'status' <span>
-        txt2SpeechPlugin.debug = 'status';
+        //txt2SpeechPlugin.debug = 'status';
     },
     //
     onDOMContentLoaded : function () {

@@ -9,6 +9,6 @@ body {margin:0px;font-size:large;}
 #copyright {margin:0.1em;font-style:italic;font-size:small;float:right;}
 
 #epochTime {font-size:small;text-align:center;}
-#theTime {font-size:5em;font-family:monospace;text-align:center;}
+#theTime {font-size:4em;font-family:monospace;text-align:center;}
 #theDate {font-size:1.5em;font-family:cursive;text-align:center;}
 #theDOW {font-size:1.25em;text-align:center;}

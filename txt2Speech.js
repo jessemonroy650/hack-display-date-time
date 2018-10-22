@@ -27,7 +27,7 @@ var txt2SpeechPlugin = {
             TTS.speak({
                 text: theText,
                 locale: 'en-US',
-                rate: 0.50
+                rate: 0.65
             }, txt2SpeechPlugin.gotit, txt2SpeechPlugin.err);
         }
     }
