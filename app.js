@@ -19,7 +19,11 @@ var app = {
                       datetime.hourStr + ":" + datetime.minuteStr;
         document.getElementById('status').innerHTML = t2sDatetime;
         //
-        txt2SpeechPlugin.talk(t2sDatetime);
+        if (app.isCordova) {
+            txt2SpeechPlugin.talk(t2sDatetime);
+        } else {
+            alert("not working at this time.");
+        }
     },
     //
     updateDateTimeDisplay : function () {
@@ -52,13 +56,7 @@ var app = {
             },
             false);
         document.getElementById('talkApp').addEventListener(app.targetEvent,
-            function () { 
-                if (app.isCordova) {
-                    app.sayDatetime();  //txt2SpeechPlugin.talk(2);
-                } else {
-                    alert("not working at this time.");
-                }
-            },
+            app.sayDatetime,
             false);
         // tell the plugin to report to the 'status' <span>
         txt2SpeechPlugin.debug = 'status';
