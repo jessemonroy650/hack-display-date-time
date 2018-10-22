@@ -13,7 +13,7 @@ var app = {
     //
     sayDatetime : function () {
         var t2sDatetime = '';
-        var hourStr     = (datetime.hourStr > 12) ? (datetime.hourStr - 12)
+        var hourStr     = (datetime.hourStr > 12) ? (datetime.hourStr - 12) : datetime.hourStr;
         t2sDatetime = datetime.dowString[datetime.dowStr] + ' ' +
                       datetime.monthString[datetime.monthStr]  + ' ' + 
                       datetime.dateStr + "," + datetime.yearStr + ". The time is: " +
